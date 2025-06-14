@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: pass
+  application:
+    name: pdf-infos
+  ai:
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+    mistralai:
+      api-key: ${MISTRALAI_API_KEY}
