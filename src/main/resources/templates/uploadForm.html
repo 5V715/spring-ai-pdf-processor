@@ -1,19 +1,23 @@
 <html>
+<head>
+    <script type="text/javascript" src="/static/js/submit-async.js"></script>
+</head>
 <body>
 
 <div>
-    <form method="POST" enctype="multipart/form-data" action="/">
+    <form id="uploadForm" enctype="multipart/form-data">
         <table>
             <tr>
-                <td>File to upload:</td>
-                <td><input type="file" accept=" " name="file"/></td>
+                <td>Pdf to check:</td>
+                <td><input type="file" name="file" id="fileInput" accept="application/pdf"/></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Upload"/></td>
+                <td><input style="display: none;" id="submit" type="submit" value="Upload"/></td>
             </tr>
         </table>
     </form>
+    <pre id="result"></pre>
 </div>
 
 

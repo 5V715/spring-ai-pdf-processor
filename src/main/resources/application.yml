@@ -1,4 +1,6 @@
 spring:
+  webflux:
+    static-path-pattern: /static/**
   datasource:
     url: jdbc:postgresql://localhost:5432/db
     username: user
